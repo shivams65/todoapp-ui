@@ -1,19 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: todoappui
+  name: todoapp-ui
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
-      app: todoappui
+      app: todo-ui
   template:
     metadata:
       labels:
-        app: todoappui
+        app: todo-ui
     spec:
       containers:
-      - name: todoappui
-        image: devopsinsiders/todoappui-new
+      - name: todo-ui
+        image: shivams65/myapp
+        resources:
         ports:
         - containerPort: 80
