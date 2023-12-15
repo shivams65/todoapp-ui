@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: todo-ui
-        image: shivams65/myapp
+        image: shivams65/todoapp-ui-ingress
         resources:
         ports:
         - containerPort: 80
